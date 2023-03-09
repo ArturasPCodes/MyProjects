@@ -1,0 +1,30 @@
+﻿<Window x:Class="MusicApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicApp"
+        xmlns:controls="clr-namespace:MusicApp.Controls"
+        mc:Ignorable="d"
+        Title="S-S-A" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:HeaderControl Grid.Row="0"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" x:Name="nDataAccessBtn" Content="Data Access" Style="{StaticResource FrontPageBtn}" Click="nDataAccessBtn_Click"/>
+            <Button Grid.Column="1" x:Name="nSearchBtn" Content="Search!" Style="{StaticResource FrontPageBtn}" Click="nSearchBtn_Click"/>
+            <Button Grid.Column="2" x:Name="nTopStatsBtn" Content="Top Stats" Style="{StaticResource FrontPageBtn}" Click="nTopStatsBtn_Click"/>
+        </Grid>
+    </Grid>
+</Window>
