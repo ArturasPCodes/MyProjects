@@ -1,0 +1,1 @@
+This is a repository for projects that was made when I was learning by myself or various tutorials.
